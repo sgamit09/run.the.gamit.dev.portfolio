@@ -24,19 +24,8 @@
       font-size: 20px;
   }
   
-  .starfox {
-    width: 100%;
-    position: relative;
-    background-repeat: repeat-y;
-    background-size: cover;
-    margin: 0px;
-    padding: 0px;
-  }
-  
   .quote {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    text-align: center;
   }
   
   h2{
