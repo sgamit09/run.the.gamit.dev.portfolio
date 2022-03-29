@@ -1,27 +1,30 @@
-/* CSS Comments */
-/* Comment 1: create the CSS root variables */
-
+/*CSS Variables*/
+:root{
+  --textcolor:white;
+  --fontfamilymatters: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
 
 *:not(li,span,a,p){
     background-image: linear-gradient(to right, #150485, #03C4A1);
     color: white;
-    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-        Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    
+    font-family:  var(--fontfamilymatters);
   }
-  
+
+/*Header CSS*/  
   .🧠 {
       padding: 0px;
       text-align: center;
       background-size: 100%;
-      color: #ffffff;
+      color: var(--textcolor);
   }
   
   h1 span{
       display: inline-block;
       font-size: 20px;
   }
-  
+
+/*Quote CSS*/   
   .🗣️ {
     text-align: center;
   }
@@ -29,12 +32,13 @@
   h2, h3{
     text-decoration: underline;
   }
-  
+
+/*Nav Bar CSS*/   
   ul{
       display: flex;
       justify-content: space-evenly;
       padding: 40px;
-      color: white;
+      color: var(--textcolor);
     }
   
    ul > li{
@@ -43,10 +47,9 @@
   
   
   a {
-      color: white;
+      color: var(--textcolor);
       text-decoration: none;
-      font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      font-family:  var(--fontfamilymatters);
    
   }
   
@@ -55,21 +58,20 @@
       font-style: initial;
   }
   
-  /*CSS Code for About Me Begins*/
+/*About Me CSS*/ 
   #🧔‍♂️ {
     flex: 3;
     padding: 20px;
-    color: white;
+    color: var(--textcolor);
     border: 4px none yellow; 
   }
   
   .📝 {  
     height: 300px;
     padding: 40px;
-    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family:  var(--fontfamilymatters);
     text-align: left;
-    color: #fff;
+    color: var(--textcolor);
     display: flex;
     flex-wrap: wrap;
   }
@@ -84,11 +86,14 @@
     margin-right:  50px;
    }
 
+/*Projects CSS*/    
   #🛠️ {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 2%;
+    margin-top: 2%; 
+    padding-bottom: 40px;
     border: 2px none pink;
   }
   
@@ -122,14 +127,15 @@
       color: white;
       text-align: left;
    }
-    
+
+/*Footer CSS*/   
    .🦶 {
     padding: 20px;
     text-align: center;
-    color: white;
+    color: var(--textcolor);
   }
   
-  
+/*Media Queries CSS*/    
   @media screen and (max-width: 750px) {
     ul {
       flex-direction: column;
