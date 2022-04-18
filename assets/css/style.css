@@ -96,7 +96,8 @@
     padding-bottom: 40px;
     border: 2px none pink;
   }
-  
+ 
+ /*Big Project CSS*/ 
   .📕 {
     height: 300px;
     width: 100%;
@@ -106,6 +107,7 @@
     background-size: auto;
     display: flex;
   }
+  
   
   .📗 {
     height: 300px;
